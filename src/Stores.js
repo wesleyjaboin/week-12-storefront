@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Products extends React.Component {
+class Stores extends React.Component {
     constructor () {
         super()
         this.state = {
@@ -17,7 +17,7 @@ class Products extends React.Component {
     }
     
     callApi = async () => {
-        const response = await fetch('http://localhost:3001/products');
+        const response = await fetch('http://localhost:3001/Stores');
         const body = await response.json();
         if (response.status !== 200) throw Error(body.message);
         
@@ -27,11 +27,11 @@ class Products extends React.Component {
     render ()  {
         return (
             <div>
-                <div>Products Place holder</div>
+                <div>Stores Place holder</div>
                 <div>{this.state.response}</div>
             </div>
         )
     }
 }
 
-export default Products
+export default Stores

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: pink;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  .Logos {background-color: #4CAF50;} /* Green */
+.Logos:hover {background-color: #46a049;}
+
+  .Products {background-color: #2196F3;} /* Blue */
+.Products:hover {background: #0b7dda;}
+
+ .Stores {background-color: #ff9800;} /* Orange */
+.Stores:hover {background: #e68a00;}
+
+  .NewArrival {background-color: #f44336;} /* Red */ 
+.NewArrival:hover {background: #da190b;}
+
+  .Home {background-color: #e7e7e7; color: black;} /* Gray */ 
+.Home:hover {background: #ddd;}
 }

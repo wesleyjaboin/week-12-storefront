@@ -9,6 +9,7 @@ import {
 import Products from './Products'
 import Logos from './Logos'
 import Stores from './Stores'
+import NewArrival from './NewArrival'
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -25,16 +26,20 @@ export default function BasicExample() {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"><button class="btn Home">Home</button></Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/products"><button class="btn Products">products</button></Link>
           </li>
           <li>
-            <Link to="/logos">Logos</Link>
+            <Link to="/logos"><button class="btn Logos">Logos</button></Link>
           </li>
           <li>
-            <Link to="/Stores">Stores</Link>
+            <Link to="/Stores"><button class="btn Stores">Stores</button></Link>
+          </li>
+          <li>
+          
+            <Link to="/NewArrival"><button class="btn New Arrival"> New Arrival</button></Link>
           </li>
         </ul>
 
@@ -59,6 +64,9 @@ export default function BasicExample() {
           </Route>
           <Route path="/Stores">
             <Stores />
+          </Route>
+          <Route path="/NewArrival">
+            <NewArrival />
           </Route>
         </Switch>
       </div>
